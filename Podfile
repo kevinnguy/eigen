@@ -10,20 +10,20 @@ inhibit_all_warnings!
 local_podfile = "Podfile.local"
 eval(File.open(local_podfile).read) if File.exist? local_podfile
 
-plugin 'cocoapods-keys', {
-    :project => "Artsy",
-    :keys => [
-        "ArtsyAPIClientSecret",
-        "ArtsyAPIClientKey",
-        "ArtsyFacebookAppID",
-        "ArtsyTwitterKey",
-        "ArtsyTwitterSecret",
-        "ArtsyTwitterStagingKey",
-        "ArtsyTwitterStagingSecret",
-        "SegmentProductionWriteKey",
-        "SegmentDevWriteKey"
-    ]
-}
+# plugin 'cocoapods-keys', {
+#     :project => "Artsy",
+#     :keys => [
+#         "ArtsyAPIClientSecret",
+#         "ArtsyAPIClientKey",
+#         "ArtsyFacebookAppID",
+#         "ArtsyTwitterKey",
+#         "ArtsyTwitterSecret",
+#         "ArtsyTwitterStagingKey",
+#         "ArtsyTwitterStagingSecret",
+#         "SegmentProductionWriteKey",
+#         "SegmentDevWriteKey"
+#     ]
+# }
 
 # Core
 pod 'Mantle', '1.5.3'
